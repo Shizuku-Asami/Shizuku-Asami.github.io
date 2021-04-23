@@ -126,6 +126,14 @@ p {
     }
 }
 
+body {
+    font: {
+        // size: $font_size;
+        family: $arabic_font;
+    }
+
+}
+
 .definition {
     border-color: $colormg1;
     border-width: 1pt;
