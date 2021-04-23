@@ -1,0 +1,88 @@
+h1 {
+  color: #0074B7;
+  font-size: 3em;
+  font-family: Amiri;
+}
+
+h2 {
+  color: #0098CA;
+  font-size: 1.8em;
+  font-family: Amiri;
+}
+
+h3 {
+  color: #00B8C3;
+  font-size: 1.6em;
+  font-family: Amiri;
+}
+
+h4 {
+  color: #00D5A7;
+  font-size: 1.4em;
+  font-family: Amiri;
+}
+
+h5 {
+  color: #95EB84;
+  font-size: 1.2em;
+  font-family: Amiri;
+}
+
+h6 {
+  color: #F9F871;
+  font-size: 1em;
+  font-family: Amiri;
+}
+
+a {
+  color: #0098CA;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+body {
+  margin: 2cm;
+  font-size: 1em;
+  font-family: Amiri;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.definition {
+  border-color: #4971BE;
+  border-width: 1pt;
+  border-style: solid;
+}
+
+.definition-title {
+  background-color: #4971BE;
+  color: white;
+}
+
+.definition-body {
+  background-color: #f6f8fc;
+}
+
+.note {
+  border-color: #BA4D2A;
+  border-width: 1pt;
+  border-style: solid;
+}
+
+.note-title {
+  background-color: #BA4D2A;
+  color: white;
+}
+
+.note-body {
+  background-color: #fcf6f4;
+}
+
+.phrase {
+  color: #0074B7;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
