@@ -43,13 +43,6 @@ p {
   text-justify: inter-word;
 }
 
-body {
-  margin: 2cm;
-  font-size: 1em;
-  font-family: Amiri;
-  background-color: rgba(255, 255, 255, 0);
-}
-
 .definition {
   border-color: #4971BE;
   border-width: 1pt;

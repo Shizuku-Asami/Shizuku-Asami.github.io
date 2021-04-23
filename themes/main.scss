@@ -126,17 +126,6 @@ p {
     }
 }
 
-body {
-    margin: $page_margin;
-
-    font: {
-        size: $font_size;
-        family: $arabic_font;
-    }
-
-    background-color: rgba(255, 255, 255, 0);
-}
-
 .definition {
     border-color: $colormg1;
     border-width: 1pt;
