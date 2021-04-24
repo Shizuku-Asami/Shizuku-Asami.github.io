@@ -333,7 +333,7 @@
                     \left| \vect{A}\cdot\vect{B} \right| \le \norm{\vect{A}} \norm{\vect{B}}
                     \label{eq:cauchy-shcwarz-inequality}
                 \end{equation}
-                العلاقة $\ref{eq:cauchy-shcwarz-inequality}$ تسمى <span class="phrase">متراجحة كوتشي-شوارز Cauchy-Schwarz</span>.
+                العلاقة $(\ref{eq:cauchy-shcwarz-inequality})$ تسمى <span class="phrase">متراجحة كوتشي-شوارز Cauchy-Schwarz</span>.
             </li>
             <li>
                 يمكن النظر إلى الجداء السلمي على أنه جداء طويلة المُتَّجِه $\vect{A}$ مع طويلة مسقط المُتَّجِه $\vect{B}$ على المُتَّجِه $\vect{A}$ أو العكس بالعكس، أي $\left( \vect{A}\cdot\vect{B} = A \left( B \cos{\phi_{AB}} \right) = B \left( A \cos{\phi_{AB}} \right) \right)$.
@@ -351,6 +351,66 @@
                 \end{equation}
             </li>
         </ol>
+        <h3>الجداء المُتَّجِه</h3>
+        <p>
+            نعرف <span class="phrase">الجداء الشعاعي vector product</span>
+            لشعاعين $\vect{A}$ و $\vect{B}$ و الذي يرمز له $\vect{A}\times\vect{B}$،
+            على أنه الشعاع الذي طويلته تساوي إلى القيمة المطلقة لجداء طويلتي الشعاعين ضرب ساين أصغر زاوية بين الشعاعين في حين أن اتجاه الشعاع الناتج يعامد المستوي الذي يتواجد فيه الشعاعين.
+            هذا يعني أن:
+            \begin{equation}
+                \boxed{\vect{A}\times\vect{B} = \norm{\vect{A}} \norm{\vect{B}}\sin{\phi_{AB}}\,\uvect{n}}
+            \end{equation}
+            حيث أن $\uvect{n}$ هو <span class="phrase">شعاع الواحدة الناظمي normal unit vector</span>، أي هو شعاع الواحدة الذي يعامد المستوي المحدد بالشعاعين $\vect{A}$ و $\vect{B}$،
+            و $\phi_{AB}$ هي أصغر زاوية بين الشعاعين.
+            يحدد شعاع الواحدة اتجاه الشعاع الناتج عن الجداء الخارجي
+        </p>
+        <h4>خصائص عملية الجداء المُتَّجِه</h4>
+        <ol>
+            <li>
+                الجداء الخارجي دوماً يعامد مستوي الشعاعين؛ هذا يعني أن الشعاع الناتج يعامد الشعاعين.
+            </li>
+            <li>
+                الجداء الشعاعي ليس تبديلي:
+                \begin{equation}
+                    \vect{A}\times\vect{B}=-\vect{B}\times\vect{A}
+                \end{equation}
+            </li>
+            <li>
+                عندما يكون الشعاعين معامدان لبعضهما علينا تمييز الحالتين $\left( \phi_{AB}=+ \pi/2 \right)$ و $\left( \phi_{AB}=- \pi/2 \right)$،
+                طويلة الجداء الشعاعي سوف تساوي إلى جداء طويلتي الشعاعين لكن من أجل $\phi_{AB}=+\pi/2$ يكون $\sin{\phi_{AB}}=+1$ و من أجل $\phi_{AB}=-\pi/2$ يكون $\sin{\phi_{AB}}=-1$ و هذا ما يحدد جهة شعاع الواحدة الناظمي.
+            </li>
+            <li>
+                إن الجداء الشعاعي لشعاعين متوازيين يعطي الشعاع الصفري $\vect{0}$ لأن $\sin{\phi_{AB}}=0$
+            </li>
+            <li>
+                الجداء الخارجي لشعاع مع نفسه دوماً يعطي الشعاع الصفري $\vect{0}$ لأن $\sin{\phi_{AA}}=0$.
+            </li>
+            <li>
+                الجداء الشعاعي توزيعي:
+                \begin{equation}
+                    \vect{A}\times\left( \vect{B}+\vect{C} \right)=\vect{A}\times\vect{B}+\vect{A}\times\vect{C}
+                    \label{eq:vectorproductdistributive}
+                \end{equation}
+            </li>
+        </ol>
+        <h4>المعنى الهندسي للجداء الشعاعي</h4>
+        <p>
+            رأينا من تعريف الجداء الشعاعي أن ناتج هذه العملية يعطي شعاعاً،
+            إذاً طويلة الجداء الشعاعي ستعطي طول الشعاع الناتج.
+            لكن هناك معنى هندسي آخر لطويلة الجداء الشعاعي،
+            إذا كتبنا من تعريف الجداء الشعاعي:
+            \begin{equation}
+                \norm{\vect{A}\times\vect{B}} = \norm{\vect{A}} \norm{\vect{B}} \abs{\sin{\phi_{AB}}}, \qquad \norm{\uvect{n}} = 1
+                \label{eq:vector-product-magnitude}
+            \end{equation}
+            و نظرنا إلى الطرف الأيمن من  العلاقة $(\ref{eq:vector-product-magnitude})$
+            فإننا نرى الجداء $\norm{\vect{A}} \norm{\vect{B}}$ و الذي يمثل مساحة مستطيل طول ضلعيه $\norm{\vect{A}}$ و $\norm{\vect{B}}$،
+            لكن يوجد أيضاً حداً إضافياً و هو $\abs{\sin{\phi_{AB}}}$ و الذي يلعب دوراً أساسياً في تعريف المساحة الذي ذكرناه.
+            لو نظرنا مرة أخرى إلى القيم التي يأخذها $\abs{\sin{\phi_{AB}}}$ سنجد أن أعظم قيمة له هي عندما يكون الشعاعين $\vect{A}$ و $\vect{B}$ متعامدين،
+            مما يعني أن المساحة التي نحصل عليها هي مساحة المستطيل نفسه،
+            بينما تنعدم قيمة $\abs{\sin{\phi_{AB}}}$ عندما يكون الشعاعين متوازيين و بالتالي المساحة في هذه الحالة معدومة،
+            و عليه فإن $\norm{\vect{A}\times\vect{B}}$ يعطينا مساحة متوازي الأضلاع المحدد بالشعاعين $\vect{A}$ و $\vect{B}$.
+        </p>
     </div>
 </body>
 </html>
