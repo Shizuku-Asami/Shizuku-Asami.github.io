@@ -286,7 +286,7 @@
                 \label{eq:linear-dependence-of-vectors}
             \end{equation}
             عندئذٍ نقول عن المُتَّجِهات $\vect{A}_{1},\vect{A}_{2},\dots,\vect{A}_{n}$ أنها مرتبطة خطياً.
-            أما إذا كان الحل الوحيد الذي يحقق $(\ref{eq:linear-dependence-of-vectors})$ هو أن يكون
+            أما إذا كان الحل الوحيد الذي يحقق العلاقة $(\ref{eq:linear-dependence-of-vectors})$ هو أن يكون
             $a_{1}=a_{2}=\dots=a_{n}=0$
             عندئذٍ نقول عن المُتَّجِهات $\vect{A}_{1},\vect{A}_{2},\dots,\vect{A}_{n}$ أنها مستقلة خطياً عن بعضها البعض.
         </p>
@@ -410,6 +410,100 @@
             مما يعني أن المساحة التي نحصل عليها هي مساحة المستطيل نفسه،
             بينما تنعدم قيمة $\abs{\sin{\phi_{AB}}}$ عندما يكون الشعاعين متوازيين و بالتالي المساحة في هذه الحالة معدومة،
             و عليه فإن $\norm{\vect{A}\times\vect{B}}$ يعطينا مساحة متوازي الأضلاع المحدد بالشعاعين $\vect{A}$ و $\vect{B}$.
+        </p>
+        <h3>الجداءات السلمية و الشعاعية المختلطة</h3>
+        <p>
+            نرى الآن نتائج تطبيق قواعد الجداء السلمي أو الشعاعي على نحوٍ متتالي لعدد من الأشعة.
+            إن طبيعة تعريف الجداء السلمي و الجداء الشعاعي لا تسمح لنا بالحصول على جميع الإمكانيات في هذه الحالة،
+            بمعنى أنه يجب مراعاة طبيعة الكمية الناتجة عن الجداء الأول و طبيعة الكمية الثانية التي يتم إدخالها مع النتيجة الأولى في الجداء الثاني، وهكذا.
+        </p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <p class="card-text text-center">
+                    الأنواع التالية من الجداءات الثلاثية معرّفة بشكل سليم:
+                    \begin{equation*}
+                        \left( \vect{A} \cdot \vect{B} \right)\vect{C}, \quad \vect{A} \cdot \left( \vect{B} \times \vect{C} \right), \quad \vect{A} \times \left( \vect{B} \times \vect{C} \right)
+                    \end{equation*}
+                </p>
+            </div>
+        </div>
+        <p>
+            ينتج عن العملية $\left( \vect{A} \cdot \vect{B} \right)\vect{C}$ شعاعاً.
+            لأن $\left( \vect{A} \cdot \vect{B} \right)$ يعطي عدداً سلمياً، و منه ضرب هذه النتيجة بالشعاع $\vect{C}$ سوف يغير قياس ذلك الشعاع.
+            ينبغي الإشارة إلى أنه بشكلٍ عام:
+            \begin{equation}
+                \left( \vect{A} \cdot \vect{B} \right) \vect{C} \neq \vect{A} \left( \vect{B} \cdot \vect{C} \right)
+            \end{equation}
+        </p>
+        <h4>الجداء الثلاثي الشعاعي</h4>
+        <p>
+            يعرف الجداء الثلاثي الشعاعي على النحو التالي:
+                \begin{equation}
+                    \boxed{\vect{A}\times\left( \vect{B}\times\vect{C} \right) = \vect{B}\left( \vect{A}\cdot\vect{C} \right)-\vect{C}\left( \vect{A}\cdot\vect{B} \right)}
+                    \label{eq:vector-triple-product-identity}
+                \end{equation}
+                و ندعوه <span class="phrase">الجداء الثلاثي الشعاعي vector triple product</span>
+                لأنه مؤلف من ثلاثة أشعة و ناتج هذا الجداء هو شعاع.
+        </p>
+        <h5>خصائص الجداء الثلاثي الشعاعي</h5>
+        <ol>
+            <li>
+                الجداء الثلاثي الشعاعي ليس تجميعياً:
+                \begin{equation}
+                    \vect{A}\times\left( \vect{B}\times\vect{C} \right) \neq \left( \vect{A}\times\vect{B} \right) \times \vect{C}
+                \end{equation}
+                هذا يعني أن ترتيب الجداء الشعاعي بين الأشعة أمرٌ مهمٌ،
+                لهذا السبب ينبغي دوماً استخدام الأقواس في عمليات الجداء الشعاعي.
+                إن العبارة $\vect{A}\times\vect{B}\times\vect{C}$ ليست عبارة سلمية لعدم وجود الأقواس و التي تحدد الأولوية في عملية الجداء الشعاعي لأنه كما ذكرنا سابقاً الجداء الشعاعي ليس تجميعياً.
+                يسمح الطرف الأيمن من العلاقة $(\ref{eq:vector-triple-product-identity})$ معرفة الترتيب الذي تتم به عملية الجداء الثلاثي الشعاعي.
+            </li>
+        </ol>
+        <h4>الجداء الثلاثي السلمي</h4>
+        <p>
+            جميع الجداءات من الشكل $\vect{A} \cdot \left( \vect{B}\times\vect{C} \right)$ تدعى <span class="phrase">الجداء الثلاثي السلمي scalar triple product</span> لأن ناتج هذه العملية يعطي مقداراً سلمياً.
+        </p>
+        <h5>خصائص الجداء الثلاثي السلمي</h5>
+        <ol>
+            <li>
+                الجداء الثلاثي السلمي يحقق قاعدة خاصية التبديل الدوري، بمعنى أن:
+                \begin{equation}
+                    \vect{A} \cdot \left( \vect{B}\times\vect{C} \right) = \vect{B} \cdot \left( \vect{C}\times\vect{A} \right) = \vect{C} \cdot \left( \vect{A}\times\vect{B} \right)
+                \end{equation}
+            </li>
+            <li>
+                من خاصية التبديل الدوري للجداء الثلاثي السلمي نرى أن:
+                \begin{equation}
+                    \vect{A} \cdot \left( \vect{B}\times\vect{C} \right) = - \vect{A} \cdot \left( \vect{C}\times\vect{B} \right)
+                \end{equation}
+            </li>
+            <li>
+                من الخاصية التبديلية للجداء السلمي نرى أن:
+                \begin{equation}
+                    \vect{A} \cdot \left( \vect{B}\times\vect{C} \right) =   \left( \vect{B}\times\vect{C} \right) \cdot \vect{A}
+                \end{equation}
+            </li>
+        </ol>
+        <h5>جملة يمينية اليد</h5>
+        <p>
+            نقول عن الأشعة $\vect{A}$ و $\vect{B}$ و $\vect{C}$ غير المشتركة في المستوي و التي لها مبدأ مشترك
+            أنها تشكل <span class="phrase">جملة يمينية اليد right-handed system</span>
+            إذا أمكن الدوران من الشعاع الأول $\vect{A}$ إلى الشعاع الثاني $\vect{B}$
+            بزاوية أقل من
+            $180^{\circ}$
+            عن طريق ثني أصابع اليد اليمنى بحيث يشير الإبهام إلى جهة الشعاع $\vect{C}$.
+            بمعنى أنه إذا تحقق $\left( \vect{A} \times \vect{B} \right) \cdot \vect{C} &gt; 0$
+            عندها الأشعة $\vect{A}$ و $\vect{B}$ و $\vect{C}$ تشكل جملة يمينية اليد.
+        </p>
+        <h5>جملة يسارية اليد</h5>
+        <p>
+            نقول عن الأشعة $\vect{A}$ و $\vect{B}$ و $\vect{C}$ غير المشتركة في المستوي و التي لها مبدأ مشترك
+            أنها تشكل <span class="phrase">جملة يسارية اليد left-handed system</span>
+            إذا أمكن الدوران من الشعاع الأول $\vect{A}$ إلى الشعاع الثاني $\vect{B}$
+            بزاوية أقل من
+            $180^{\circ}$
+            عن طريق ثني أصابع اليد اليسرى بحيث يشير الإبهام إلى جهة الشعاع $\vect{C}$.
+            بمعنى أنه إذا تحقق $\left( \vect{A} \times \vect{B} \right) \cdot \vect{C} &lt; 0$
+            عندها الأشعة $\vect{A}$ و $\vect{B}$ و $\vect{C}$ تشكل جملة يسارية اليد.
         </p>
     </div>
 </body>
