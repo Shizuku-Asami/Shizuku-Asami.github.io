@@ -14,42 +14,42 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="preamble.js"></script>
-    <title>جبر الأشعة</title>
+    <title>جبر المُتَّجِهَات</title>
 </head>
 <body>
     <div class="container">
-        <h1>جبر الأشعة</h1>
-        <h2>مقدِّمة عن الأشعة</h2>
-        <h3>المقادير الشعاعية</h3>
+        <h1 class="mt-3">جبر المُتَّجِهَات Vector Algebra</h1>
+        <h2>مقدِّمة عن المُتَّجِهَات</h2>
+        <h3>المقادير المُتَّجِهَة</h3>
         <p>
-            المقادير الشعاعية هي مقادير لها قيمة و اتجاه.
-            يُمَثَّل الشعاع بسهم حيث أنَّ طول السهم يُعَبِّر عن 
-            <span class="phrase">طَوِيْلَة الشعاع</span>، 
-            نَرْمُز لِمقدار شعاعي ما بالرمز $\vect{A}$ (حرف ثخين فوقه سهم) أو $\overrightarrow{PQ}$ و المقصود به الشعاع من النقطة $P$ إلى النقطة $Q$.
-            نَرْمُز  لطويلة الشعاع $\vect{A}$ بالرمز $\norm{\vect{A}}$ أو ببساطة $A$،
-            و نَرْمُز  لطويلة الشعاع $\overrightarrow{PQ}$ بالرمز $|\overrightarrow{PQ}|$.
+            المقادير المُتَّجِهَة هي مقادير لها قيمة و اتجاه.
+            يُمَثَّل المُتَّجِه بسهم حيث أنَّ طول السهم يُعَبِّر عن 
+            <span class="phrase">طَوِيْلَة magnitude</span> المُتَّجِه، 
+            نَرْمُز لِمقدار مُتَّجِه ما بالرمز $\vect{A}$ (حرف ثخين فوقه سهم) أو $\overrightarrow{PQ}$ و المقصود به المُتَّجِه من النقطة $P$ إلى النقطة $Q$.
+            نَرْمُز  لطَوِيْلَة المُتَّجِه $\vect{A}$ بالرمز $\norm{\vect{A}}$ أو ببساطة $A$،
+            و نَرْمُز  لطَوِيْلَة المُتَّجِه $\overrightarrow{PQ}$ بالرمز $|\overrightarrow{PQ}|$.
             \begin{equation}
                 A=\norm{\vect{A}}, \qquad A \ge 0
             \end{equation}
         </p>
-        <h3>شعاع الواحدة</h3>
+        <h3>مُتَّجِه الواحدة</h3>
         <p>
-            نقول عن الشعاع الذي طويلته تساوي العدد واحد أنه 
-            <span class="phrase">شعاع واحدة</span>.
-            يمكن الحصول على شعاع الواحدة بتقسيم الشعاع على طويلته.
+            نقول عن المُتَّجِه الذي طويلته تساوي العدد واحد أنه 
+            <span class="phrase">مُتَّجِه واحدة unit vector</span>.
+            يمكن الحصول على مُتَّجِه الواحدة بتقسيم المُتَّجِه على طويلته.
             \begin{equation}
                 \uvect{A}=\frac{\vect{A}}{\norm{\vect{A}}}=\frac{\vect{A}}{A}
                 \label{eq:unit-vector-definition}
             \end{equation}
-            يمكن التعبير عن أي شعاع $\vect{A}$ بأنه شعاع الواحدة له $\uvect{A}$ الذي جهته من جهة $\vect{A}$ مضروباً بطويلة الشعاع $\vect{A}$،
+            يمكن التعبير عن أي مُتَّجِه $\vect{A}$ بأنه مُتَّجِه الواحدة له $\uvect{A}$ الذي جهته من جهة $\vect{A}$ مضروباً بطَوِيْلَة المُتَّجِه $\vect{A}$،
             هذا يعني أن:
             \begin{equation}
                 \vect{A} = \norm{\vect{A}} \uvect{A} = A \uvect{A}
             \end{equation}
         </p>
-        <h3>الشعاع الصِّفْرِي</h3>
+        <h3>المُتَّجِه الصِّفْرِي</h3>
         <p>
-            نقول عن شعاع أنَّه <span class="phrase">شعاع صفري</span>
+            نقول عن مُتَّجِه أنَّه <span class="phrase">مُتَّجِه صفري zero vector</span>
             إذا كانت طويلته العدد صفر،
             و نرمز له $\vect{0}$ أو ببساطة $0$،
             هذا يعني:
@@ -65,58 +65,58 @@
             <div class="card-body">
                 
                 <p>
-                    اتجاه الشعاع الصفري غير معرف و ذلك لأن:
+                    اتجاه المُتَّجِه الصفري غير معرف و ذلك لأن:
                     \begin{equation*}
                         \uvect{0} = \frac{\vect{0}}{\abs{\vect{0}}} = \frac{\vect{0}}{0} \Rightarrow \uvect{0} \, \mathrm{is\,undefined}
                     \end{equation*}
                 </p>
             </div>
         </div>
-        <h3>خصائص الأشعة</h3>
+        <h3>خصائص المُتَّجِهَات</h3>
         <p>
             <ol>
                 <li>
-                    يتساوى شعاعين $\vect{A}$ و $\vect{B}$ إذا كان لهما الطويلة نفسها و الاتجاه نفسه،
+                    يتساوى مُتَّجِهن $\vect{A}$ و $\vect{B}$ إذا كان لهما الطَوِيْلَة نفسها و الاتجاه نفسه،
                     بصرف النظر عن نقطة البدء لهما.
                 </li>
                 <li>
-                    أي شعاع له اتجاه معاكس لاتجاه الشعاع المعطى $\vect{A}$ لكن له الطويلة نفسها يرمز له $-\vect{A}$
-                    و ندعوه <span class="phrase">الشعاع السالب</span>
+                    أي مُتَّجِه له اتجاه معاكس لاتجاه المُتَّجِه المعطى $\vect{A}$ لكن له الطَوِيْلَة نفسها يرمز له $-\vect{A}$
+                    و ندعوه <span class="phrase">المُتَّجِه السالب negative vector</span>
                     لـ $\vect{A}$.
                 </li>
             </ol>
         </p>
-        <h3>الأشعة المتوازية</h3>
+        <h3>المُتَّجِهَات المتوازية</h3>
         <p>
-            نقول عن أشعة أنها
-            <span class="phrase">متوازية</span>
+            نقول عن مُتَّجِهات أنها
+            <span class="phrase">متوازية parallel</span>
             عندما تكون على الحامل نفسه و لها الاتجاه نفسه.
         </p>
         <figure class="figure">
             <img src="imgs/parallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="parallel vectors">
-            <figcaption class="figure-caption">أشعة متوازية.</figcaption>
+            <figcaption class="figure-caption">مُتَّجِهات متوازية.</figcaption>
         </figure>
-        <h3>الأشعة المتوازية عكسياً</h3>
+        <h3>المُتَّجِهَات المتوازية عكسياً</h3>
         <p>
-            نقول عن أشعة أنها
-            <span class="phrase">متوازية عكسياً</span>
-            عندما تكون على الحامل نفسه و جهة أحد الشعاعين تعاكس جهة الشعاع الآخر.
+            نقول عن مُتَّجِهات أنها
+            <span class="phrase">متوازية عكسياً antiparallel</span>
+            عندما تكون على الحامل نفسه و جهة أحد المُتَّجِهن تعاكس جهة المُتَّجِه الآخر.
         </p>
         <figure class="figure">
             <img src="imgs/antiparallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="antiparallel vectors">
-            <figcaption class="figure-caption">أشعة متوازية عكسياً.</figcaption>
+            <figcaption class="figure-caption">مُتَّجِهات متوازية عكسياً.</figcaption>
         </figure>
-        <h3>الأشعة المتخالفة</h3>
+        <h3>المُتَّجِهَات المتخالفة</h3>
         <p>
-            نقول عن أشعة أنها
+            نقول عن مُتَّجِهات أنها
             <span class="phrase">متخالفة</span>
-            لم تكن على الحامل نفسه.
+            إذا لم تكن على الحامل نفسه.
         </p>
-        <h2>جمع الأشعة</h2>
+        <h2>جمع المُتَّجِهَات</h2>
         <p>
-            تختلف طبيعة جمع الأشعة عن طبيعة جمع الأعداد،
+            تختلف طبيعة جمع المُتَّجِهَات عن طبيعة جمع الأعداد،
             ففي حالة جمع الأعداد فإننا نكتفي فقط بجمع قيمها مع الانتباه إلى واحدات المقادير التي يتم جمعها،
-            أما في حالة الأشعة فيجب الأخذ بعين الاعتبار اتجاه الأشعة التي نجمعها.
+            أما في حالة المُتَّجِهَات فيجب الأخذ بعين الاعتبار اتجاه المُتَّجِهَات التي نجمعها.
         </p>
     </div>
 </body>
