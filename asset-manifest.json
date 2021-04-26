@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shizuku-asami.github.io/static/css/main.26f9e6b0.chunk.css",
+    "main.js": "/shizuku-asami.github.io/static/js/main.3d8f4148.chunk.js",
+    "main.js.map": "/shizuku-asami.github.io/static/js/main.3d8f4148.chunk.js.map",
+    "runtime-main.js": "/shizuku-asami.github.io/static/js/runtime-main.6ba08410.js",
+    "runtime-main.js.map": "/shizuku-asami.github.io/static/js/runtime-main.6ba08410.js.map",
+    "static/js/2.60340c7e.chunk.js": "/shizuku-asami.github.io/static/js/2.60340c7e.chunk.js",
+    "static/js/2.60340c7e.chunk.js.map": "/shizuku-asami.github.io/static/js/2.60340c7e.chunk.js.map",
+    "static/js/3.c59ebed2.chunk.js": "/shizuku-asami.github.io/static/js/3.c59ebed2.chunk.js",
+    "static/js/3.c59ebed2.chunk.js.map": "/shizuku-asami.github.io/static/js/3.c59ebed2.chunk.js.map",
+    "index.html": "/shizuku-asami.github.io/index.html",
+    "static/css/main.26f9e6b0.chunk.css.map": "/shizuku-asami.github.io/static/css/main.26f9e6b0.chunk.css.map",
+    "static/js/2.60340c7e.chunk.js.LICENSE.txt": "/shizuku-asami.github.io/static/js/2.60340c7e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/shizuku-asami.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ba08410.js",
+    "static/js/2.60340c7e.chunk.js",
+    "static/css/main.26f9e6b0.chunk.css",
+    "static/js/main.3d8f4148.chunk.js"
+  ]
+}

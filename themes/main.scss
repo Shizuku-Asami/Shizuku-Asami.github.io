@@ -1,0 +1,172 @@
+@use "sass:color";
+
+// COLOR SCHEME //
+// This color scheme is generated from the following color
+$colorprimary:  #0074B7;
+// GENERIC GRADIENT //
+$colorgg1: #0098CA;
+$colorgg2: #00B8C3;
+$colorgg3: #00D5A7;
+$colorgg4: #95EB84;
+$colorgg5: #F9F871;
+// MATCHING GRADIENT //
+$colormg1: #4971BE;
+$colormg2: #736BBE;
+$colormg3: #9663B8;
+$colormg4: #B55AAB;
+$colormg5: #CD5198;
+// SPOT PALETTE //
+$colorsp1: #5DA8EF;
+$colorsp2: #D9F3FF;
+$colorsp3: #DF9F1F;
+// TWISTED SPOT PALETTE //
+$colorts1: #FFEDCB;
+$colorts2: #897456;
+// CLASSY PALETTE //
+$colorcp1: #3D4856;
+$colorcp2: #A1ACBD;
+$colorcp3: #AE4F74;
+$colorcp4: #E884A8;
+// CUBE PALETTE //
+$colorcube1: #518983;
+$colorcube2: #EEE8A9;
+// SWITCH PALETTE //
+$colorswitch1: #99DEFF;
+$colorswitch2: #E6F4F1;
+// SMALL SWITCH PALETTE //
+$colorss1: #DAF3F0;
+$colorss2: #328F87;
+// SKIP GRADIENT //
+$colorsg1: #77FAC6;
+$colorsg2: #36C190;
+$colorsg3: #008A5E;
+// NATURAL PALETTE //
+$colornp1: #7293BC;
+$colornp2: #EEFAFF;
+$colornp3: #E6F4F1;
+// MATCHING PALETTE //
+$colormp1: #3D4856;
+$colormp2: #A1ACBD;
+$colormp3: #8F6825;
+$colormp4: #C89B56;
+// SQUASH PALETTE //
+$colorsquash1: #BA4D2A;
+$colorsquash2: #008572;
+// DOTTING PALETTE //
+$colordp: #BDA5AC;
+// SKIP SHADE GRADIENT //
+$colorssg1: #00A4D3;
+$colorssg2: #00D1D5;
+// THREEDOM //
+$colorthree: #C44145;
+$colorthree: #13803C;
+
+
+
+$font_size: 1em;
+$arabic_font: Amiri;
+$page_margin: 2cm;
+
+h1 {
+    color: $colorprimary;
+    font: {
+        size: $font_size*3;
+        family: $arabic_font;
+    }
+}
+
+h2 {
+    color: $colorgg1;
+    font: {
+        size: $font_size*2 - ($font_size/5);
+        family: $arabic_font;
+    }
+}
+
+h3 {
+    color: $colorgg2;
+    font: {
+        size: $font_size*2 - (2*$font_size/5);
+        family: $arabic_font;
+    }
+}
+
+h4 {
+    color: $colorgg3;
+    font: {
+        size: $font_size*2 - (3 * $font_size/5);
+        family: $arabic_font;
+    }
+}
+
+h5 {
+    color: $colorgg4;
+    font: {
+        size: $font_size*2 - (4* $font_size/5);
+        family: $arabic_font;
+    }
+}
+
+h6 {
+    color: $colorgg5;
+    font: {
+        size: $font_size*2 - (5 * $font_size/5);
+        family: $arabic_font;
+    }
+}
+
+a {
+    color: $colorgg1;
+}
+
+p {
+    text: {
+        align: justify;
+        justify: inter-word;
+    }
+}
+
+body {
+    font: {
+        // size: $font_size;
+        family: $arabic_font;
+    }
+
+}
+
+.definition {
+    border-color: $colormg1;
+    border-width: 1pt;
+    border-style: solid;
+}
+
+.definition-title {
+    background-color: $colormg1;
+    color: white;
+
+}
+
+.definition-body {
+    background-color: mix($colormg1,white, $weight: 5%);
+}
+
+.note {
+    border-color: $colorsquash1;
+    border-width: 1pt;
+    border-style: solid;
+}
+
+.note-title {
+    background-color: $colorsquash1;
+    color: white;
+
+}
+
+.note-body {
+    background-color: mix($colorsquash1,white, $weight: 5%);
+}
+
+.phrase {
+    color: $colorprimary;
+    font-weight: bold;
+}
