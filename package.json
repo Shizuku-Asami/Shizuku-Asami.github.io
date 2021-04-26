@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "shizuku-asami.github.io",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -77,7 +77,7 @@ class VectorAlgebra extends React.Component {
                 عندما تكون على الحامل نفسه و لها الاتجاه نفسه.
             </p>
             <figure class="figure">
-                <img src="shizuku-asami.github.io/imgs/parallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="parallel vectors">
+                <img src="./imgs/parallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="parallel vectors">
                 <figcaption class="figure-caption">مُتَّجِهات متوازية.</figcaption>
             </figure>
             <h3>المُتَّجِهَات المتوازية عكسياً</h3>
@@ -87,7 +87,7 @@ class VectorAlgebra extends React.Component {
                 عندما تكون على الحامل نفسه و جهة أحد المُتَّجِهين تعاكس جهة المُتَّجِه الآخر.
             </p>
             <figure class="figure">
-                <img src="shizuku-asami.github.io/imgs/antiparallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="antiparallel vectors">
+                <img src="./imgs/antiparallel_vec.png" class="figure-img img-fluid rounded mx-auto" alt="antiparallel vectors">
                 <figcaption class="figure-caption">مُتَّجِهات متوازية عكسياً.</figcaption>
             </figure>
             <!-- <h3>المُتَّجِهَات المتخالفة</h3>
