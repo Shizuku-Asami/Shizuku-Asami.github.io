@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
+
 import VectorAlgebra from './VectorAlgebra';
+import VectorAlgebraCartesian from './VectorAlgebraCartesian';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VectorAlgebra />
+    <VectorAlgebraCartesian />
   </React.StrictMode>,
   document.getElementById('root')
 );
