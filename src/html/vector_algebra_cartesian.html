@@ -68,7 +68,7 @@
                 \end{split}
             \end{equation}
         </p>
-        <div class="card bg-secondary">
+        <div class="card bg-secondary mb-3">
             <div class="card-body">
                 <p class="card-text">
                     إذا كان $\vect{A} = \left( A_{x}, A_{y}, A_{z} \right)$ و $\vect{B} = \left( B_{x}, B_{y}, B_{z} \right)$ فإن حاصل جمع شعاعين في الإحداثيات الديكارتية هو
@@ -89,7 +89,7 @@
                 \end{split}
             \end{equation}
         </p>
-        <div class="card bg-secondary">
+        <div class="card bg-secondary mb-3">
             <div class="card-body">
                 <p class="card-text">
                     إذا كان $\vect{A} = \left( A_{x}, A_{y}, A_{z} \right)$ و $\vect{B} = \left( B_{x}, B_{y}, B_{z} \right)$ فإن حاصل طرح شعاعين في الإحداثيات الديكارتية هو
@@ -111,6 +111,24 @@
             \end{equation}
             هذا يعني أنه عندما نضرب شعاعاً ما بمقدار سلمي،
             فإننا نضرب جميع مركبات هذا الشعاع بالمقدار السلمي.
+        </p>
+        <h4>مسقط شعاع ما على شعاع آخر</h4>
+        <p>
+            إن مسقط الشعاع $\vect{A}$ على الشعاع $\vect{B}$ هو $A\cos{\phi_{AB}}$، و هو:
+            \begin{equation}
+                A\cos{\phi_{AB}}=\frac{\vect{A}\cdot\vect{B}}{B}=\frac{A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z}}{\sqrt{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}}}
+            \end{equation}
+            بعد أن حسبنا القيمة العددية لمسقط الشعاع $\vect{A}$ على $\vect{B}$ فإننا نضرب هذه النتيجة بشعاع الواحدة الذي جهته من جهة الشعاع $\vect{B}$ و الذي هو:
+            \begin{equation}
+                \uvect{B}=\frac{\vect{B}}{\left| \vect{B} \right|}=\frac{B_{x}\uvect{e}_{x}+B_{y}\uvect{e}_{y}+B_{z}\uvect{e}_{z}}{\sqrt{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}}}
+            \end{equation}
+            حينئذٍ تكون المركبة الشعاعية للشعاع $\vect{A}$ باتجاه الشعاع $\vect{B}$ هي:
+            \begin{equation}
+                \begin{split}
+                    \vect{A}_{\vect{B}}&=A\cos{\phi_{AB}}\, \uvect{B}=\frac{B_{x}\left( \vect{A} \cdot \vect{B} \right) \uvect{e}_{x}+B_{y}\left( \vect{A} \cdot \vect{B} \right) \uvect{e}_{y}+B_{z}\left( \vect{A} \cdot \vect{B} \right) \uvect{e}_{z}}{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}} \\
+                    &=\frac{B_{x}\left( A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z} \right)}{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}} \uvect{e}_{x}+\frac{B_{y}\left( A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z} \right)}{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}} \uvect{e}_{y}\\ &\quad+\frac{B_{z}\left( A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z} \right)}{B_{x}^{2}+B_{y}^{2}+B_{z}^{2}} \uvect{e}_{z}
+                \end{split}
+            \end{equation}
         </p>
     </div>
 </body>
