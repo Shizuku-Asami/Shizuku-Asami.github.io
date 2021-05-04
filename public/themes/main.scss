@@ -170,3 +170,8 @@ body {
     color: $colorprimary;
     font-weight: bold;
 }
+
+iframe {
+    height: 100vh;
+    display: block;
+}

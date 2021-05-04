@@ -11,7 +11,16 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VectorAlgebraCartesian />
+    <div class="">
+      <div class="row">
+        <div class="col-9">
+          <VectorAlgebraCartesian />
+        </div>
+        <div class="col-3">
+
+        </div>
+      </div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -82,4 +82,9 @@ body {
   font-weight: bold;
 }
 
+iframe {
+  height: 100vh;
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */
