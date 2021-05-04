@@ -130,6 +130,47 @@
                 \end{split}
             \end{equation}
         </p>
+        <h4>مركبات شعاع بدلالة الجداء السلمي مع أشعة الواحدة</h4>
+        <p>
+            حتى نحصل على العبارة المطلوبة علينا التعبير عن مركبات الشعاع $\vect{A}$ بدلالة أشعة الواحدة الموافقة لها.
+            نستطيع تحقيق هذا الأمر بالاستفادة من خصائص الجداء السلمي لأشعة الواحدة.
+            على سبيل المثال لو أردنا التعبير عن $A_{x}$ بدلالة أشعة الواحدة فإننا نضرب طرفي عبارة الشعاع $\vect{A}$ بشعاع الواحدة $\uvect{e}_{x}$:
+            \begin{equation}
+                \vect{A}\cdot\uvect{e}_{x}=A_{x} \left( \uvect{e}_{x}\cdot\uvect{e}_{x} \right) +A_{y} \left( \uvect{e}_{y}\cdot\uvect{e}_{x} \right) +A_{z} \left( \uvect{e}_{z}\cdot\uvect{e}_{x} \right)
+            \end{equation}
+            إن الجداء السلمي لأشعة الواحدة يكون معدوم، هذا يعني أن $\uvect{e}_{y}\cdot\uvect{e}_{x}=\uvect{e}_{z}\cdot\uvect{e}_{x}=0$، أما $\uvect{e}_{x}\cdot\uvect{e}_{x}=1$. يبقى لدينا إذاً:
+            \begin{equation}
+                A_{x} = \vect{A}\cdot\uvect{e}_{x}
+            \end{equation}
+            حتى نحصل على المركبة $A_{y}$ نضرب طرفي عبارة الشعاع $\vect{A}$ بشعاع الواحدة $\uvect{e}_{y}$:
+            \begin{equation}
+                \vect{A}\cdot\uvect{e}_{y}=A_{x} \left( \uvect{e}_{x}\cdot\uvect{e}_{y} \right) +A_{y} \left( \uvect{e}_{y}\cdot\uvect{e}_{y} \right) +A_{z} \left( \uvect{e}_{z}\cdot\uvect{e}_{y} \right)
+            \end{equation}
+            نرى أن $\uvect{e}_{x}\cdot\uvect{e}_{y}=\uvect{e}_{z}\cdot\uvect{e}_{y}=0$ و أن $\uvect{e}_{y}\cdot\uvect{e}_{y}=1$، و منه:
+            \begin{equation}
+                A_{y} = \vect{A}\cdot\uvect{e}_{y}
+            \end{equation}
+            نكرر هذه العملية من أجل المركبة $A_{z}$:
+            \begin{equation}
+                \vect{A}\cdot\uvect{e}_{z}=A_{x} \left( \uvect{e}_{x}\cdot\uvect{e}_{z} \right) +A_{y} \left( \uvect{e}_{y}\cdot\uvect{e}_{z} \right) +A_{z} \left( \uvect{e}_{z}\cdot\uvect{e}_{z} \right)
+            \end{equation}
+            لنحصل على:
+            \begin{equation}
+                A_{z} = \vect{A}\cdot\uvect{e}_{z}
+            \end{equation}
+            بعد المقارنة مع عبارة الشعاع $\vect{A}=A_{x}\uvect{e}_{x}+A_{y}\uvect{e}_{y}+A_{z}\uvect{e}_{z}$ فإننا نحصل على العبارة المطلوبة:
+            \begin{equation}
+                \vect{A}=\left( \vect{A} \cdot \uvect{e}_{x} \right) \uvect{e}_{x} + \left( \vect{A} \cdot \uvect{e}_{y} \right) \uvect{e}_{y} + \left( \vect{A} \cdot \uvect{e}_{z} \right) \uvect{e}_{z}
+            \end{equation}
+            و نكون قد كتبنا مركبات الشعاع بدلالة أشعة الواحدة المناسبة:
+            \begin{equation}
+                \begin{split}
+                    A_{x} &= \vect{A}\cdot\uvect{e}_{x} \\
+                    A_{y} &= \vect{A}\cdot\uvect{e}_{y} \\
+                    A_{z} &= \vect{A}\cdot\uvect{e}_{z}
+                \end{split}
+            \end{equation}
+        </p>
     </div>
 </body>
 </html>

@@ -51,7 +51,7 @@ let content = `<div class="container">
         \\end{split}
     \\end{equation}
 </p>
-<div class="card bg-secondary">
+<div class="card bg-secondary mb-3">
     <div class="card-body">
         <p class="card-text">
             إذا كان $\\vect{A} = \\left( A_{x}, A_{y}, A_{z} \\right)$ و $\\vect{B} = \\left( B_{x}, B_{y}, B_{z} \\right)$ فإن حاصل جمع شعاعين في الإحداثيات الديكارتية هو
@@ -62,6 +62,39 @@ let content = `<div class="container">
         </p>
     </div>
 </div>
+<p>
+    لنرى كيف تتم عملية طرح شعاعين في الإحداثيات الديكارتية، ليكن $\\vect{D}=\\vect{A}-\\vect{B}$:
+    \\begin{equation}
+        \\begin{split}
+            \\vect{D}&=\\left( A_{x}\\uvect{e}_{x}+A_{y}\\uvect{e}_{y}+A_{z}\\uvect{e}_{z} \\right)-\\left( B_{x}\\uvect{e}_{x}+B_{y}\\uvect{e}_{y}+B_{z}\\uvect{e}_{z} \\right) \\\\
+            &=\\left( A_{x}-B_{x} \\right)\\uvect{e}_{x}+\\left( A_{y}-B_{y} \\right)\\uvect{e}_{y}+\\left( A_{z}-B_{z} \\right)\\uvect{e}_{z} \\\\
+            &= D_{x}\\uvect{e}_{x} + D_{y}\\uvect{e}_{y} + D_{z}\\uvect{e}_{z}
+        \\end{split}
+    \\end{equation}
+</p>
+<div class="card bg-secondary mb-3">
+    <div class="card-body">
+        <p class="card-text">
+            إذا كان $\\vect{A} = \\left( A_{x}, A_{y}, A_{z} \\right)$ و $\\vect{B} = \\left( B_{x}, B_{y}, B_{z} \\right)$ فإن حاصل طرح شعاعين في الإحداثيات الديكارتية هو
+            \\begin{equation}
+                \\vect{A} - \\vect{B} = \\left( A_{x} - B_{x}, A_{y} - B_{y}, A_{z} - B_{z} \\right)
+            \\end{equation}
+            نرى إذاً أننا نطرح المركبات التي تكون على المحور نفسه.
+        </p>
+    </div>
+</div>
+<h3>ضرب الأشعة بمقدار سلمي</h3>
+<p>
+    لنرى الآن كيف ستكون عملية ضرب الشعاع بعدد سلمي في الإحداثيات الديكارتية، من أجل شعاع $\\vect{A}=A_{x}\\uvect{e}_{x}+A_{y}\\uvect{e}_{y}+A_{z}\\uvect{e}_{z}$ و عدد سلمي $k$ يكون:
+    \\begin{equation}
+        \\begin{split}
+            k\\vect{A}&=k\\left( A_{x}\\uvect{e}_{x}+A_{y}+\\uvect{e}_{y}+A_{z}\\uvect{e}_{z} \\right) \\\\
+            &=\\left( k A_{x} \\right) \\uvect{e}_{x} + \\left( k A_{y} \\right) \\uvect{e}_{y} + \\left( k A_{z} \\right) \\uvect{e}_{z}
+        \\end{split}
+    \\end{equation}
+    هذا يعني أنه عندما نضرب شعاعاً ما بمقدار سلمي،
+    فإننا نضرب جميع مركبات هذا الشعاع بالمقدار السلمي.
+</p>
 </div>`;
 
 class VectorAlgebraCartesian extends React.Component {
