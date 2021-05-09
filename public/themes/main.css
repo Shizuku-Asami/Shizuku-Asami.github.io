@@ -62,21 +62,6 @@ body {
   background-color: #f6f8fc;
 }
 
-.note {
-  border-color: #BA4D2A;
-  border-width: 1pt;
-  border-style: solid;
-}
-
-.note-title {
-  background-color: #BA4D2A;
-  color: white;
-}
-
-.note-body {
-  background-color: #fcf6f4;
-}
-
 .phrase {
   color: #0074B7;
   font-weight: bold;
@@ -85,6 +70,62 @@ body {
 iframe {
   height: 100vh;
   display: block;
+}
+
+.example {
+  border: solid 1.5pt #005789;
+  background-color: #0074B7;
+  border-radius: 1rem;
+  box-shadow: 4pt 4pt 6pt #3D4856;
+  margin: 2rem 0;
+}
+
+.example-header {
+  padding: 0.5em;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #0074B7;
+}
+
+.example-title {
+  font-size: 1.2em;
+  color: white;
+}
+
+.example-body {
+  padding: 0.5em;
+  color: black;
+  background-color: #e6f1f8;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.note {
+  border: solid 1.5pt #8c3a20;
+  background-color: #BA4D2A;
+  border-radius: 1rem;
+  box-shadow: 4pt 4pt 6pt #3D4856;
+  margin: 2rem 0;
+}
+
+.note-header {
+  padding: 0.5em;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #BA4D2A;
+}
+
+.note-title {
+  font-size: 1.2em;
+  color: white;
+}
+
+.note-body {
+  padding: 0.5em;
+  color: black;
+  background-color: #f8edea;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

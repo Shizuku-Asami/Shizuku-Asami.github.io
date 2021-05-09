@@ -67,6 +67,14 @@ $font_size: 1em;
 $arabic_font: Amiri;
 $page_margin: 2cm;
 
+// .container {
+//     border: solid 1pt black;
+//     padding: 1rem;
+//     border-radius: 1rem;
+//     background-color: white;
+//     box-shadow: 4pt 4pt 6pt $colorcp1;
+// }
+
 h1 {
     color: $colorprimary;
     font: {
@@ -150,21 +158,7 @@ body {
     background-color: mix($colormg1,white, $weight: 5%);
 }
 
-.note {
-    border-color: $colorsquash1;
-    border-width: 1pt;
-    border-style: solid;
-}
 
-.note-title {
-    background-color: $colorsquash1;
-    color: white;
-
-}
-
-.note-body {
-    background-color: mix($colorsquash1,white, $weight: 5%);
-}
 
 .phrase {
     color: $colorprimary;
@@ -174,4 +168,60 @@ body {
 iframe {
     height: 100vh;
     display: block;
+}
+
+.example {
+    border: solid 1.5pt mix($colorprimary,black, $weight: 75%);
+    background-color: $colorprimary;
+    border-radius: 1rem;
+    box-shadow: 4pt 4pt 6pt $colorcp1;
+    margin: 2rem 0;
+}
+
+.example-header {
+    padding: 0.5em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: $colorprimary;
+}
+
+.example-title {
+    font-size: 1.2em;
+    color: white;
+}
+
+.example-body {
+    padding: 0.5em;
+    color: black;
+    background-color: mix($colorprimary,white, $weight: 10%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.note {
+    border: solid 1.5pt mix($colorsquash1,black, $weight: 75%);
+    background-color: $colorsquash1;
+    border-radius: 1rem;
+    box-shadow: 4pt 4pt 6pt $colorcp1;
+    margin: 2rem 0;
+}
+
+.note-header {
+    padding: 0.5em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: $colorsquash1;
+}
+
+.note-title {
+    font-size: 1.2em;
+    color: white;
+}
+
+.note-body {
+    padding: 0.5em;
+    color: black;
+    background-color: mix($colorsquash1,white, $weight: 10%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
