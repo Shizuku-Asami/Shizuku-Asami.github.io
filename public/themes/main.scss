@@ -171,6 +171,7 @@ iframe {
 }
 
 .example {
+    -webkit-print-color-adjust: exact;
     border: solid 1.5pt mix($colorprimary,black, $weight: 75%);
     background-color: $colorprimary;
     border-radius: 1rem;
@@ -179,6 +180,7 @@ iframe {
 }
 
 .example-header {
+    -webkit-print-color-adjust: exact;
     padding: 0.5em;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -186,11 +188,13 @@ iframe {
 }
 
 .example-title {
+    -webkit-print-color-adjust: exact;
     font-size: 1.2em;
     color: white;
 }
 
 .example-body {
+    -webkit-print-color-adjust: exact;
     padding: 0.5em;
     color: black;
     background-color: mix($colorprimary,white, $weight: 10%);
@@ -199,6 +203,7 @@ iframe {
 }
 
 .note {
+    -webkit-print-color-adjust: exact;
     border: solid 1.5pt mix($colorsquash1,black, $weight: 75%);
     background-color: $colorsquash1;
     border-radius: 1rem;
@@ -207,6 +212,7 @@ iframe {
 }
 
 .note-header {
+    -webkit-print-color-adjust: exact;
     padding: 0.5em;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -214,11 +220,13 @@ iframe {
 }
 
 .note-title {
+    -webkit-print-color-adjust: exact;
     font-size: 1.2em;
     color: white;
 }
 
 .note-body {
+    -webkit-print-color-adjust: exact;
     padding: 0.5em;
     color: black;
     background-color: mix($colorsquash1,white, $weight: 10%);

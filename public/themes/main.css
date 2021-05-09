@@ -73,6 +73,7 @@ iframe {
 }
 
 .example {
+  -webkit-print-color-adjust: exact;
   border: solid 1.5pt #005789;
   background-color: #0074B7;
   border-radius: 1rem;
@@ -81,6 +82,7 @@ iframe {
 }
 
 .example-header {
+  -webkit-print-color-adjust: exact;
   padding: 0.5em;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -88,11 +90,13 @@ iframe {
 }
 
 .example-title {
+  -webkit-print-color-adjust: exact;
   font-size: 1.2em;
   color: white;
 }
 
 .example-body {
+  -webkit-print-color-adjust: exact;
   padding: 0.5em;
   color: black;
   background-color: #e6f1f8;
@@ -101,6 +105,7 @@ iframe {
 }
 
 .note {
+  -webkit-print-color-adjust: exact;
   border: solid 1.5pt #8c3a20;
   background-color: #BA4D2A;
   border-radius: 1rem;
@@ -109,6 +114,7 @@ iframe {
 }
 
 .note-header {
+  -webkit-print-color-adjust: exact;
   padding: 0.5em;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -116,11 +122,13 @@ iframe {
 }
 
 .note-title {
+  -webkit-print-color-adjust: exact;
   font-size: 1.2em;
   color: white;
 }
 
 .note-body {
+  -webkit-print-color-adjust: exact;
   padding: 0.5em;
   color: black;
   background-color: #f8edea;
