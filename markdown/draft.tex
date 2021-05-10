@@ -1,0 +1,60 @@
+\begin{document}
+\begin{equation}
+    \nabla^{2} = \frac{\partial^{2}{}}{\partial{x}^{2}} + \frac{\partial^{2}{}}{\partial{y}^{2}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+\end{equation}
+\begin{equation}
+    x = \rho \cos{\phi}, \quad y = \rho \sin{\phi}, \quad z = z
+\end{equation}
+\begin{equation}
+    \rho = \sqrt{x^{2} + y^{2}}, \quad \phi = \arctan{\frac{y}{x}}, \quad z = z
+\end{equation}
+\begin{equation}
+    \frac{\partial{f}}{\partial{x}} = \frac{\partial{f}}{\partial{\rho}} \frac{\partial{\rho}}{\partial{x}} + \frac{\partial{f}}{\partial{\phi}} \frac{\partial{\phi}}{\partial{x}}
+\end{equation}
+\begin{equation}
+    \frac{\partial{f}}{\partial{y}} = \frac{\partial{f}}{\partial{\rho}} \frac{\partial{\rho}}{\partial{y}} + \frac{\partial{f}}{\partial{\phi}} \frac{\partial{\phi}}{\partial{y}}
+\end{equation}
+\begin{equation}
+    \frac{\partial{f}}{\partial{z}} = \frac{\partial{f}}{\partial{z}}
+\end{equation}
+\begin{equation}
+    \frac{\partial{\rho}}{\partial{x}} = \frac{\partial}{\partial{x}} \left( \sqrt{x^{2} + y^{2}} \right) = \frac{x}{\sqrt{x^{2} + y^{2}}} = \frac{x}{\rho} = \cos{\phi}
+\end{equation}
+\begin{equation}
+    \frac{\partial{\rho}}{\partial{y}} = \frac{\partial}{\partial{y}} \left( \sqrt{x^{2} + y^{2}} \right) = \frac{y}{\sqrt{x^{2} + y^{2}}} = \frac{y}{\rho} = \sin{\phi}
+\end{equation}
+\begin{equation}
+    \frac{\partial{\phi}}{\partial{x}} = \frac{\partial}{\partial{x}} \left( \arctan{\frac{y}{x}} \right) = - \frac{\sin{\phi}}{\rho}
+\end{equation}
+\begin{equation}
+    \frac{\partial{\phi}}{\partial{y}} = \frac{\partial}{\partial{y}} \left( \arctan{\frac{y}{x}} \right) = \frac{\cos{\phi}}{\rho}
+\end{equation}
+\begin{equation}
+    \frac{\partial{f}}{\partial{x}} = \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right)
+\end{equation}
+\begin{equation}
+    \frac{\partial{f}}{\partial{y}} = \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho}
+\end{equation}
+\begin{equation}
+    \begin{split}
+        \frac{\partial^{2}{f}}{\partial{x}^{2}} &= \frac{\partial}{\partial{\rho}} \left( \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right) \right) \frac{\partial{\rho}}{\partial{x}} + \frac{\partial}{\partial{\phi}} \left( \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right) \right) \frac{\partial{\phi}}{\partial{x}} \\
+        &= \left( \cos{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} + \frac{\sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} \right) \cos{\phi} \\
+        &+ \left( - \sin{\phi} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \cos{\phi} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} - \frac{\cos{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right) \left( - \frac{\sin{\phi}}{\rho} \right) \\
+        &= \left( \cos^{2}{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} + \frac{2 \cos{\phi} \sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{2 \cos{\phi} \sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} + \frac{\sin^{2}{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \frac{\sin^{2}{\phi}}{\rho^{2}} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right)
+    \end{split}
+\end{equation}
+\begin{equation}
+    \begin{split}
+        \frac{\partial^{2}{f}}{\partial{y}^{2}} &= \frac{\partial}{\partial{\rho}} \left( \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho} \right) \frac{\partial{\rho}}{\partial{y}} + \frac{\partial}{\partial{\phi}} \left( \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho} \right) \frac{\partial{\phi}}{\partial{y}} \\
+        &= \left( \sin{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} - \frac{\cos{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{\cos{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} \right) \sin{\phi} \\
+        &+ \left( \cos{\phi} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \sin{\phi} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{\cos{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right) \left( \frac{\cos{\phi}}{\rho} \right) \\
+        &= \left( \sin^{2}{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} - \frac{2 \cos{\phi} \sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{2 \cos{\phi} \sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} + \frac{\cos^{2}{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \frac{\cos^{2}{\phi}}{\rho^{2}} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right)
+    \end{split}
+\end{equation}
+\begin{equation}
+    \nabla^{2} f(\rho,\phi,z) = \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{f(\rho,\phi,z)}}{\partial{\rho}^{}} + \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{z}^{2}}
+\end{equation}
+\begin{equation}
+    \nabla^{2} \equiv \frac{\partial^{2}{}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{}}{\partial{\rho}^{}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+\end{equation}
+\end{document}

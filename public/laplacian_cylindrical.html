@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.rtl.min.css" integrity="sha384-trxYGD5BY4TyBTvU5H23FalSCYwpLA0vWEvXXGm5eytyztxb+97WzzY+IWDOSbav" crossorigin="anonymous">
+    <link rel="stylesheet" href="./themes/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./preamble.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>الصفحة الرئيسية</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="example">
+            <div class="example-header">
+                <div class="example-title">
+                    مؤثر اللابلاسي في الإحداثيات الأسطوانية
+                </div>
+            </div>
+            <div class="example-body">
+                <div class="example-question">
+                    إذا عَلِمْتَ أنَّ مُؤثر اللابلاسي في الإحداثيات الديكارتية يعطى بالعلاقة
+                    \begin{equation}
+                        \nabla^{2} = \frac{\partial^{2}{}}{\partial{x}^{2}} + \frac{\partial^{2}{}}{\partial{y}^{2}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+                        \label{laplace-operator-cartesian}
+                    \end{equation}
+                    أوجد عبارة مؤثر اللابلاسي في الإحداثيات الأسطوانية، حيث أن العلاقات التي تربط بين الإحداثيات الديكارتية و الإحداثيات الأسطوانية هي:
+                    \begin{equation}
+                        x = \rho \cos{\phi}, \quad y = \rho \sin{\phi}, \quad z = z
+                        \label{cartesian-function-cylindrical}
+                    \end{equation}
+                    \begin{equation}
+                        \rho = \sqrt{x^{2} + y^{2}}, \quad \phi = \arctan{\frac{y}{x}}, \quad z = z
+                        \label{cylindrical-function-cartesian}
+                    \end{equation}
+                </div>
+                <div class="example-answer">
+                    ليكن لدينا التابع $f(x,y,z)$، نريد معرفة كيف يتغير مؤثر اللابلاسي عندما نُعَبِّر عن التابع $f$ بدلالة الإحداثيات الأسطوانية، أي عندما نجري التحويل $f(x,y,z) \to f(\rho,\phi,z)$.
+                    علينا الاستفادة من العلاقات التي تربط بين الإحداثيات الديكارتية بالإحداثيات الأسطوانية حتى نوجد عبارة المؤثر اللابلاسي في الإحداثيات الأسطوانية.
+                    هذا يعني أن المتحولات في الإحداثيات الديكارتية تكون توابعاً للإحداثيات الأسطوانية، أي $x=x(\rho,\phi)$ و $y=y(\rho,\phi)$ مع بقاء الإحداثي $z$ لا متغيراً بين جملتي الإحداثيتين.
+                    نوجد شكل المشتقات الجزئية من المرتبة الأولى بالاستفادة من $(\ref{cartesian-function-cylindrical})$. و منه، بتطبيق قاعدة السلسلة chain rule:
+                    \begin{equation}
+                        \frac{\partial{f}}{\partial{x}} = \frac{\partial{f}}{\partial{\rho}} \frac{\partial{\rho}}{\partial{x}} + \frac{\partial{f}}{\partial{\phi}} \frac{\partial{\phi}}{\partial{x}}
+                        \label{eqdfdx}
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{f}}{\partial{y}} = \frac{\partial{f}}{\partial{\rho}} \frac{\partial{\rho}}{\partial{y}} + \frac{\partial{f}}{\partial{\phi}} \frac{\partial{\phi}}{\partial{y}}
+                        \label{eqdfdy}
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{f}}{\partial{z}} = \frac{\partial{f}}{\partial{z}}
+                    \end{equation}
+                    ينبغي أن تكون نواتج كل من المشتقات الجزئية $\displaystyle \frac{\partial{\rho}}{\partial{x}}, \frac{\partial{\rho}}{\partial{y}}, \frac{\partial{\phi}}{\partial{x}}, \frac{\partial{\phi}}{\partial{y}}$ مقاديراً تتبع للإحداثيات الأسطوانية، لكن لحساب هذه المشتقات ينبغي علينا أن نُعَبِّر عن $\rho$ و $\phi$ كتوابع للإحداثيات الديكارتية:
+                    \begin{equation}
+                        \frac{\partial{\rho}}{\partial{x}} = \frac{\partial}{\partial{x}} \left( \sqrt{x^{2} + y^{2}} \right) = \frac{x}{\sqrt{x^{2} + y^{2}}} = \frac{x}{\rho} = \cos{\phi}
+                        \label{eq1}
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{\rho}}{\partial{y}} = \frac{\partial}{\partial{y}} \left( \sqrt{x^{2} + y^{2}} \right) = \frac{y}{\sqrt{x^{2} + y^{2}}} = \frac{y}{\rho} = \sin{\phi}
+                        \label{eq2}
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{\phi}}{\partial{x}} = \frac{\partial}{\partial{x}} \left( \arctan{\frac{y}{x}} \right) = - \frac{\sin{\phi}}{\rho}
+                        \label{eq3}
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{\phi}}{\partial{y}} = \frac{\partial}{\partial{y}} \left( \arctan{\frac{y}{x}} \right) = \frac{\cos{\phi}}{\rho}
+                        \label{eq4}
+                    \end{equation}
+                    بتعويض $(\ref{eq1})$ و $(\ref{eq3})$ في $(\ref{eqdfdx})$، و $(\ref{eq2})$ و $(\ref{eq4})$ في $(\ref{eqdfdy})$ نحصل على:
+                    \begin{equation}
+                        \frac{\partial{f}}{\partial{x}} = \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right)
+                    \end{equation}
+                    \begin{equation}
+                        \frac{\partial{f}}{\partial{y}} = \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho}
+                    \end{equation}
+                    نوجد المشتقات الجزئية من المرتبة الثانية، بالنسبة لـ $\displaystyle \frac{\partial^{2}{f}}{\partial{x}^{2}}$:
+                    \begin{equation}
+                        \begin{split}
+                            \frac{\partial^{2}{f}}{\partial{x}^{2}} &= \frac{\partial}{\partial{\rho}} \left( \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right) \right) \frac{\partial{\rho}}{\partial{x}} + \frac{\partial}{\partial{\phi}} \left( \frac{\partial{f}}{\partial{\rho}} \cos{\phi} + \frac{\partial{f}}{\partial{\phi}} \left( - \frac{\sin{\phi}}{\rho} \right) \right) \frac{\partial{\phi}}{\partial{x}} \\
+                            &= \left( \cos{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} + \frac{\sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} \right) \cos{\phi} \\
+                            &+ \left( - \sin{\phi} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \cos{\phi} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} - \frac{\cos{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right) \left( - \frac{\sin{\phi}}{\rho} \right) \\
+                            &= \left( \cos^{2}{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} + \frac{2 \cos{\phi} \sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} - \frac{2 \cos{\phi} \sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} + \frac{\sin^{2}{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \frac{\sin^{2}{\phi}}{\rho^{2}} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right)
+                        \end{split}
+                    \end{equation}
+                    بطريقة مشابهة نستطيع حساب $\displaystyle \frac{\partial^{2}{f}}{\partial{y}^{2}}$:
+                    \begin{equation}
+                    \begin{split}
+                        \frac{\partial^{2}{f}}{\partial{y}^{2}} &= \frac{\partial}{\partial{\rho}} \left( \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho} \right) \frac{\partial{\rho}}{\partial{y}} + \frac{\partial}{\partial{\phi}} \left( \frac{\partial{f}}{\partial{\rho}} \sin{\phi} + \frac{\partial{f}}{\partial{\phi}} \frac{\cos{\phi}}{\rho} \right) \frac{\partial{\phi}}{\partial{y}} \\
+                        &= \left( \sin{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} - \frac{\cos{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{\cos{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} \right) \sin{\phi} \\
+                        &+ \left( \cos{\phi} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \sin{\phi} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} - \frac{\sin{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{\cos{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right) \left( \frac{\cos{\phi}}{\rho} \right) \\
+                        &= \left( \sin^{2}{\phi} \frac{\partial^{2}{f}}{\partial{\rho}^{2}} - \frac{2 \cos{\phi} \sin{\phi}}{\rho^{2}} \frac{\partial^{}{f}}{\partial{\phi}^{}} + \frac{2 \cos{\phi} \sin{\phi}}{\rho} \frac{\partial^{2}{f}}{\partial{\rho}\partial{\phi}} + \frac{\cos^{2}{\phi}}{\rho} \frac{\partial^{}{f}}{\partial{\rho}^{}} + \frac{\cos^{2}{\phi}}{\rho^{2}} \frac{\partial^{2}{f}}{\partial{\phi}^{2}} \right)
+                    \end{split}
+                \end{equation}
+                بجمع عبارتي $\displaystyle \frac{\partial^{2}{f(x,y,z)}}{\partial{x}^{2}}$ و $\displaystyle \frac{\partial^{2}{f(x,y,z)}}{\partial{y}^{2}}$ نحصل على عبارة مؤثر اللابلاسي في الإحداثيات الأسطوانية.
+                \begin{equation}
+                    \nabla^{2} f(\rho,\phi,z) = \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{f(\rho,\phi,z)}}{\partial{\rho}^{}} + \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{z}^{2}}
+                \end{equation}
+                \begin{equation}
+                    \nabla^{2} \equiv \frac{\partial^{2}{}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{}}{\partial{\rho}^{}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+                \end{equation}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

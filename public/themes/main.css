@@ -95,6 +95,14 @@ iframe {
   color: white;
 }
 
+.example-question {
+  color: #0074B7;
+}
+
+.example-answer {
+  color: black;
+}
+
 .example-body {
   -webkit-print-color-adjust: exact;
   padding: 0.5em;
