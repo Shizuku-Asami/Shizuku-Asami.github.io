@@ -14,7 +14,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="./preamble.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>الصفحة الرئيسية</title>
+    <title>مؤثر اللابلاسي في الإحداثيات الأسطوانية</title>
 </head>
 <body>
     <div class="container mt-3">
@@ -101,10 +101,17 @@
                 \end{equation}
                 بجمع عبارتي $\displaystyle \frac{\partial^{2}{f(x,y,z)}}{\partial{x}^{2}}$ و $\displaystyle \frac{\partial^{2}{f(x,y,z)}}{\partial{y}^{2}}$ نحصل على عبارة مؤثر اللابلاسي في الإحداثيات الأسطوانية.
                 \begin{equation}
-                    \nabla^{2} f(\rho,\phi,z) = \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{f(\rho,\phi,z)}}{\partial{\rho}^{}} + \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{z}^{2}}
+                    \nabla^{2} f(\rho,\phi,z) = \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{f(\rho,\phi,z)}}{\partial{\rho}^{}} + \frac{1}{\rho^{2}} \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\phi}^{2}} + \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{z}^{2}}
                 \end{equation}
                 \begin{equation}
-                    \nabla^{2} \equiv \frac{\partial^{2}{}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}{}}{\partial{\rho}^{}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+                    \nabla^{2} \equiv \frac{\partial^{2}{}}{\partial{\rho}^{2}} + \frac{1}{\rho} \frac{\partial^{}}{\partial{\rho}^{}} + \frac{1}{\rho^{2}} \frac{\partial^{2}{}}{\partial{\phi}^{2}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
+                \end{equation}
+                أو على النحو التالي:
+                \begin{equation}
+                    \nabla^{2} f(\rho,\phi,z) = {\frac {1}{\rho }}{\frac {\partial }{\partial \rho }} \left(\rho {\frac {\partial f(\rho,\phi,z)}{\partial \rho }} \right) + \frac{1}{\rho^{2}} \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{\phi}^{2}} + \frac{\partial^{2}{f(\rho,\phi,z)}}{\partial{z}^{2}}
+                \end{equation}
+                \begin{equation}
+                    \nabla^{2} \equiv {\frac {1}{\rho }}{\frac {\partial }{\partial \rho }} \left(\rho {\frac {\partial }{\partial \rho }} \right) + \frac{1}{\rho^{2}} \frac{\partial^{2}{}}{\partial{\phi}^{2}} + \frac{\partial^{2}{}}{\partial{z}^{2}}
                 \end{equation}
                 </div>
             </div>
